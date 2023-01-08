@@ -1,0 +1,63 @@
+body {
+    background-color: bisque;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'UniNeueHeavy-Italic';
+    text-align: center;
+}
+
+.box {
+    margin: 10px 5%;
+}
+
+.image {
+    float: left;
+    width: 30%;
+    margin: 0 2%;
+}
+
+.image:first-child {
+    margin-left: 0;
+}
+
+.image img {
+    border: 2px solid #ccc;
+}
+
+.image p {
+    text-align: center;
+    font-style: italic;
+    color: rgb(37, 57, 58);
+}
+
+.content {
+    clear: both;
+    margin: 5px 5%;
+}
+
+.text_block {
+    float: left;
+    margin: 0 5%;
+    width: 40%;
+}
+
+.text_block p {
+    text-align: justify;
+}
+
+.text_block a {
+    text-align: right;
+    display: block;
+}
+
+.text_block img {
+    float: left;
+}
+
+ol {
+    width: 50%;
+    float: left;
+}
