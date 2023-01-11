@@ -1,5 +1,5 @@
-function greeting(user_name) {
-    console.log(`Привет, ${user_name}!`)
+function greeting(userName) {
+    console.log(`Привет, ${userName}!`);
 }
 
-greeting(prompt("Как вас зовут? "))
+greeting(prompt("Как вас зовут? "));

@@ -93,9 +93,9 @@ $works = [
  
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
             <?php for ($i = 0; $i < count($skills); $i++): ?>
-            <p><?php echo $skills[$i]["name"] ?></p>
+            <p><?php echo $skills[$i]['name'] ?></p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]["percent"] ?>%"><?php echo $skills[$i]["percent"] ?></div>
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]['percent'] ?>%"><?php echo $skills[$i]['percent'] ?></div>
             </div>
             <?php endfor; ?>
             <br>
@@ -128,12 +128,12 @@ $works = [
 
           <?php for ($i = 0; $i < count($works); $i++): ?>
           <div class="w3-container">
-          	<h5 class="w3-opacity"><b> <?php echo $works[$i][name] ?> </b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $works[$i][beginWork] ?> - 
-            		<?php if ($works[$i][endWork] == 'наст. время'): ?>
+          	<h5 class="w3-opacity"><b> <?php echo $works[$i]['name'] ?> </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $works[$i]['beginWork'] ?> - 
+            		<?php if ($works[$i]['endWork'] == 'наст. время'): ?>
 	                    <span class="w3-tag w3-teal w3-round">наст. время</span>
                     <?php  else: ?>
-                    	<?php echo $works[$i][endWork] ?>
+                    	<?php echo $works[$i]['endWork'] ?>
                    	<?php  endif; ?>
                     </h6>
             <p><?php echo $works[$i][textx] ?></p>
